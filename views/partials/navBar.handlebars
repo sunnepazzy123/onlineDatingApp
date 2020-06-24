@@ -68,13 +68,21 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
+        <form action="/register" method="post">
       <div class="modal-body">
-        ...
+
+           <input type="text" name="firstName" class="form-control email mb-3" placeholder="Enter First Name">
+           <input type="text" name="lastName" class="form-control email mb-3" placeholder="Enter Last Name">
+           <input type="email" name="email" class="form-control email mb-3" placeholder="Enter Email">
+            <input type="password" name="password" class="form-control email mb-3" placeholder="Enter Password">
+            <input type="password" name="confirmPassword" class="form-control email mb-3" placeholder="Enter Confirm Password">
+        
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="submit" class="btn btn-primary">Register</button>
       </div>
+      </form>
     </div>
   </div>
 </div>
